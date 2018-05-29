@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 
-import '../styles/index.sass'
+import './all.sass'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="container">
@@ -11,7 +11,7 @@ const TemplateWrapper = ({ children, data }) => (
       favicon={data.datoCmsSite.faviconMetaTags}
       seo={data.datoCmsHome.seoMetaTags}
     />
-    <div className="container__sidebar">
+    <div id="white-background" className="container__sidebar">
       <div className="sidebar">
         <h6 className="sidebar__title">
           <Link to="/">{data.datoCmsSite.globalSeo.siteName}</Link>
